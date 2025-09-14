@@ -93,30 +93,30 @@
                 title: 'แอปสร้าง Sales Orders',
                 description: `ลูกค้าต้องการระบบที่จะมาช่วยสร้าง Sales Orders จากจำนวนสินที่มีใน Stock และจากนั้นสามารถส่งเป็น E-mail ไปถึงทีมฝ่ายขายได้จบภายในระบบ \n\n- ฟังก์ชั่นเลือกายการสินค้าอ้างอิงตามจำนวนใน Stock \n- ระบบตรวจสอบจำนวนของที่มีใน Stock \n- Dashboard สรุปยอดรายการขาย \n- ส่งอีเมลอัตโนมัติถึงทีมขาย \n- ระบบแอดมินสำหรับจัดการสินค้าและ Stock`,
                 images: [
-                    'images/demo/demo1-1.png',
-                    'images/demo/demo1-2.png',
-                    'images/demo/demo1-3.png',
-                    'images/demo/demo1-4.png'
+                    'images/demo1-1.png',
+                    'images/demo1-2.png',
+                    'images/demo1-3.png',
+                    'images/demo1-4.png'
                 ]
             },
             p2: {
                 title: 'แอปจัดการข้อมูลสาขา Franchises',
                 description: `พัฒนาแอปสำหรับใช้เก็บข้อมูลสาขา Franchises ที่มีข้อมูลของลูกค้าและข้อมูลพื้นฐานที่จำเป็นของสาขา \n\n- หน้าโปรไฟล์ลูกค้าพร้อมข้อมูลที่จำเป็น \n- ระบบ Run Number เลขที่สาขาอัตโนมัติ \n- มีปฏิทินแสดงวันครบกำหนดชำระเงิน \n- ระบบแอดมินสำหรับจัดการข้อมูลสาขาและข้อมูลลูกค้า`,
                 images: [
-                    'images/demo/demo2-1.png',
-                    'images/demo/demo2-2.png',
-                    'images/demo/demo2-3.png',
-                    'images/demo/demo2-4.png'
+                    'images/demo2-1.png',
+                    'images/demo2-2.png',
+                    'images/demo2-3.png',
+                    'images/demo2-4.png'
                 ]
             },
             p3: {
                 title: 'แอปจัดการข้อมูลพนักงานและข้อมูลบริษัท',
                 description: `สร้างระบบที่สามารถช่วยในการจัดการข้อมูลพนักงานที่สมัครเข้ามาทำงาน การคัดเลือกพนักงานดีเด่น การตรวจสอบติดตามสภานะของงานและทรัพย์สินของบริษัท \n\n- ระบบคัดเลือกพนักงาน \n- ระบบจัดเก็บข้อมูลพนักงาน \n- ระบบติดตามสถานะงาน \n- ระบบจัดการทรัพย์สินของบริษัท \n- ระบบแอดมินสำหรับจัดการข้อมูลพนักงานและข้อมูลบริษัท`,
                 images: [
-                    'images/demo/demo3-1.png',
-                    'images/demo/demo3-2.png',
-                    'images/demo/demo3-3.png',
-                    'images/demo/demo3-4.png'
+                    'images/demo3-1.png',
+                    'images/demo3-2.png',
+                    'images/demo3-3.png',
+                    'images/demo3-4.png'
                 ]
             }
         };
