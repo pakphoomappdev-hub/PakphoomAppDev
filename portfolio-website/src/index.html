@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakphoom App Dev - No-Code App Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 id="nav-title" class="text-2xl font-bold text-white transition-colors duration-300 flex items-center gap-2">
+                        <img src="images/Glide-symbol-black.png" alt="Pakphoom Logo" class="h-8 w-8 rounded-full object-cover" />
+                        Pakphoom Glide Expert
+                    </h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-2">
+                        <a href="#home" class="nav-link text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded-md text-sm font-medium transition">หน้าแรก</a>
+                        <a href="#services" class="nav-link text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded-md text-sm font-medium transition">บริการ</a>
+                        <a href="#portfolio" class="nav-link text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded-md text-sm font-medium transition">ผลงาน</a>
+                        <a href="#about" class="nav-link text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded-md text-sm font-medium transition">เกี่ยวกับ</a>
+                        <a href="#certificates" class="nav-link text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded-md text-sm font-medium transition">ใบรับรอง</a>
+                        <a href="#contact" id="nav-contact-btn" class="bg-white text-indigo-600 font-semibold hover:bg-gray-200 px-4 py-2 rounded-lg text-sm transition">ติดต่อ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="glide-gradient-bg min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-loose">
+                        สร้างแอปใน<br>
+                        <span class="text-cyan-300">ไม่กี่วัน</span><br>
+                        ไม่ต้องเขียนโค้ด
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-indigo-100">
+                        ผู้เชี่ยวชาญ No-Code App Development ด้วย Glide Platform<br>
+                        แปลงไอเดียของคุณให้เป็นแอปที่ใช้งานได้จริง
+                    </p>
+                    <button onclick="scrollToContact()" class="btn-primary px-8 py-4 rounded-lg text-lg transform hover:scale-105 shadow-lg">
+                        ปรึกษาโปรเจกต์ฟรี 🚀
+                    </button>
+                </div>
+                <div class="flex justify-center">
+                    <div class="animate-float">
+                        <div class="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl ring-4 ring-white ring-opacity-25">
+                            <img src="images/Pakphoom-profile.jpg" alt="รูปโปรไฟล์ Pakphoom" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Glide Section -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">ทำไมต้อง Glide?</h2>
+                <p class="text-xl text-gray-600">แพลตฟอร์มที่ดีที่สุดสำหรับการสร้างแอปโดยไม่ต้องเขียนโค้ด</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">รวดเร็ว</h3>
+                    <p class="text-gray-600">สร้างแอปได้ใน 1-7 วัน แทนที่จะใช้เวลาหลายเดือน</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">ประหยัด</h3>
+                    <p class="text-gray-600">ต้นทุนต่ำกว่าการจ้างทีมพัฒนาแอปแบบดั้งเดิม</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                       <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m16-10v10M4 11h16M4 14h16M10 4v3m4-3v3"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">ขับเคลื่อนด้วยข้อมูล</h3>
+                    <p class="text-gray-600">เชื่อมต่อกับ Google Sheets, Airtable และอื่นๆ</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button onclick="openDetailsModal()" class="bg-indigo-50 text-indigo-700 font-semibold hover:bg-indigo-100 px-6 py-3 rounded-lg transition">
+                    เปรียบเทียบค่าใช้จ่ายและข้อจำกัด
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">บริการของเรา</h2>
+                <p class="text-xl text-gray-600">ครบวงจรสำหรับการพัฒนาแอปด้วย No-Code</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: พัฒนาแอปใหม่ -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200 text-center">
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">พัฒนาแอปใหม่</h3>
+                    <p class="text-gray-600">สร้างแอปตามความต้องการของคุณ ตั้งแต่แอปจัดการข้อมูล ไปจนถึงแอป E-commerce</p>
+                </div>
+                <!-- Service 2: ปรับปรุงแอปเดิม -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200 text-center">
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">ปรับปรุงแอปเดิม</h3>
+                    <p class="text-gray-600">อัพเกรดและปรับปรุงแอปที่มีอยู่ให้มีประสิทธิภาพและฟีเจอร์ใหม่ๆ</p>
+                </div>
+                <!-- Service 3: ปรึกษาและวางแผน -->
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover border border-gray-200 text-center">
+                    <!-- Icon -->
+                    <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">ปรึกษาและวางแผน</h3>
+                    <p class="text-gray-600">วิเคราะห์ความต้องการและวางแผนการพัฒนาแอปที่เหมาะสมกับธุรกิจของคุณ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">ผลงานของเรา</h2>
+                <p class="text-xl text-gray-600">แอปที่เราได้สร้างให้กับลูกค้า</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-gray-200 h-64 rounded-xl shadow-lg">
+                    <img src="images/Demo/demo1-1.png" alt="แอปสร้าง Sales Orders">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-semibold mb-2">แอปสร้าง Sales Orders</h3>
+                        <p class="text-sm">ระบบสร้าง Sales Order จากจำนวนสินค้าใน Stock</p>
+                        <button onclick="openPortfolioModal('p1')" class="mt-4 bg-white text-indigo-600 font-semibold px-4 py-2 rounded-lg text-sm transition hover:bg-gray-200">
+                            ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-gray-200 h-64 rounded-xl shadow-lg">
+                    <img src="images/Demo/demo2-1.png" alt="แอปจัดการข้อมูลสาขา Franchises">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-semibold mb-2">แอปจัดการข้อมูลสาขา Franchises</h3>
+                        <p class="text-sm">ระบบจัดการข้อมูลสาขา Franchises และจัดการข้อมูลลูกค้า</p>
+                        <button onclick="openPortfolioModal('p2')" class="mt-4 bg-white text-indigo-600 font-semibold px-4 py-2 rounded-lg text-sm transition hover:bg-gray-200">
+                            ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-gray-200 h-64 rounded-xl shadow-lg">
+                    <img src="images/Demo/demo3-5.png" alt="แอปจัดการข้อมูลพนักงานและข้อมูลบริษัท">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-semibold mb-2">แอปจัดการข้อมูลพนักงานและข้อมูลบริษัท</h3>
+                        <p class="text-sm">ระบบจัดการข้อมูลพนักงานและข้อมูลบริษัท</p>
+                        <button onclick="openPortfolioModal('p3')" class="mt-4 bg-white text-indigo-600 font-semibold px-4 py-2 rounded-lg text-sm transition hover:bg-gray-200">
+                            ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50 border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">เกี่ยวกับ Pakphoom</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        ผมเป็น No-Code App Developer ที่มีประสบการณ์มากกว่า 3 ปีในการสร้างแอปด้วย Glide Platform 
+                        ได้ช่วยธุรกิจต่างๆ มากกว่า 10 แห่งในการแปลงไอเดียให้เป็นแอปที่ใช้งานได้จริง
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-600 mb-2">10+</div>
+                            <div class="text-gray-600">โปรเจกต์ที่สำเร็จ</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-600 mb-2">3+</div>
+                            <div class="text-gray-600">ปีประสบการณ์</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-80 h-80 rounded-full overflow-hidden shadow-xl border-4 border-white">
+                        <img src="images/Pakphoom-profile.jpg" alt="รูปโปรไฟล์ Pakphoom" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">ใบรับรอง (Certificates)</h2>
+                <p class="text-xl text-gray-600">การรับรองความสามารถและทักษะ</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center border border-gray-200">
+                     <img src="images/Certificates/Pakphoom's Glide Certification Level 1.pdf" alt="Certificate 1" class="rounded-lg mx-auto shadow-sm mb-4 h-48 object-contain">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Glide Certified Expert 1</h3>
+                    <p class="text-gray-600">Glide</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center border border-gray-200">
+                     <img src="images/Certificates/Pakphoom's Glide Certification Level 2.pdf" alt="Certificate 2" class="rounded-lg mx-auto shadow-sm mb-4 h-48 object-contain">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Glide Certified Expert 2</h3>
+                    <p class="text-gray-600">Glide</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center border border-gray-200">
+                     <img src="images/Certificates/Certificate Google 1.pdf" alt="Certificate 3" class="rounded-lg mx-auto shadow-sm mb-4 h-48 object-contain">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Google data analytics</h3>
+                    <p class="text-gray-600">Google</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="contact" class="section-padding glide-gradient-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                พร้อมที่จะเริ่มต้นแล้วหรือยัง?
+            </h2>
+            <p class="text-xl md:text-2xl text-indigo-100 mb-8">
+                ปรึกษาฟรี! ทำ Demo ฟรี! <br>
+                มาคุยกันเรื่องไอเดียแอปของคุณ เราจะช่วยวิเคราะห์และเสนอแนวทางที่เหมาะสม
+            </p>
+            <button onclick="openContactModal()" class="btn-primary px-10 py-4 rounded-xl text-xl transform hover:scale-105 shadow-2xl">
+                ติดต่อเราเลย! 🚀
+            </button>
+        </div>
+    </section>
+    
+    <!-- Visible Contact Info Section -->
+    <section id="connect" class="section-padding bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">ช่องทางการติดต่อ</h2>
+                <p class="text-lg text-gray-600 mt-2">เลือกช่องทางที่สะดวกที่สุดสำหรับคุณ</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Email -->
+                <a href="mailto:pakphoomappdev@gmail.com" class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4">Email</h3>
+                    <p class="text-indigo-600 font-medium">pakphoomappdev@gmail.com</p>
+                </a>
+                <!-- Phone -->
+                <a href="tel:095-6728359" class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4">โทรศัพท์</h3>
+                    <p class="text-indigo-600 font-medium">095-672-8359</p>
+                </a>
+                <!-- LINE -->
+                <a href="https://line.me/ti/p/w7SunCAH_8" target="_blank" class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                       <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4">LINE</h3>
+                    <p class="text-indigo-600 font-medium">@pakphoom17</p>
+                </a>
+                <!-- Fastwork -->
+                <!-- TODO: ใส่ลิงก์โปรไฟล์ Fastwork ของคุณที่นี่ -->
+                <a href="https://fastwork.co/user/pakphoom17/desktop-application-37454667?source=seller-center_my-service_share-link" target="_blank" class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mt-4">Fastwork</h3>
+                    <p class="text-indigo-600 font-medium">ดูโปรไฟล์</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Modal -->
+    <div id="detailsModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-gray-900">เปรียบเทียบการพัฒนาแอป</h3>
+                <p class="text-gray-600 mt-2">ทำความเข้าใจความแตกต่างระหว่าง Glide และ Native Development</p>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Comparison Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Glide Column -->
+                    <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <h4 class="text-2xl font-bold text-indigo-800">Glide</h4>
+                        </div>
+                        <div class="space-y-4 text-gray-700">
+                            <p><b>ค่าใช้จ่าย/เวลา:</b> <span class="font-medium text-indigo-700">ต่ำกว่ามาก</span> (พัฒนาใน 1-7 วัน)</p>
+                            <p><b>การบำรุงรักษา:</b> <span class="font-medium text-indigo-700">ง่ายและรวดเร็ว</span> ผ่าน Interface ที่ใช้งานง่าย</p>
+                            <p><b>เหมาะสำหรับ:</b> MVP, แอปภายในองค์กร, โปรเจกต์ที่ต้องการความเร็วและงบจำกัด</p>
+                        </div>
+                    </div>
+                    <!-- Native Column -->
+                    <div class="bg-gray-100 border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-gray-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <h4 class="text-2xl font-bold text-gray-800">Native Development</h4>
+                        </div>
+                        <div class="space-y-4 text-gray-700">
+                             <p><b>ค่าใช้จ่าย/เวลา:</b> <span class="font-medium text-amber-700">สูง</span> (ใช้เวลา 3-6+ เดือน)</p>
+                            <p><b>การบำรุงรักษา:</b> <span class="font-medium text-amber-700">ซับซ้อน</span> และต้องอาศัยนักพัฒนา</p>
+                            <p><b>เหมาะสำหรับ:</b> แอป Performance สูง, ต้องการฟีเจอร์เฉพาะทาง, ผู้ใช้จำนวนมหาศาล</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Limitations Section -->
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-6">
+                    <div class="flex items-center mb-3">
+                         <svg class="w-6 h-6 text-amber-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        <h4 class="text-xl font-bold text-amber-800">ข้อจำกัดที่ควรทราบของ No-Code</h4>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li><b>Performance:</b> ไม่เหมาะกับแอปที่ต้องประมวลผลข้อมูลซับซ้อนหรือมีฐานข้อมูลขนาดใหญ่มาก</li>
+                        <li><b>Customization:</b> การออกแบบ UI/UX ถูกจำกัดอยู่ในกรอบของแพลตฟอร์ม</li>
+                        <li><b>Hardware Access:</b> การเข้าถึงฟังก์ชันระดับลึกของโทรศัพท์ (เช่น NFC) อาจทำไม่ได้</li>
+                        <li><b>Monthly Fees:</b> อาจมีค่าบริการรายเดือนสำหรับการใช้งานแพลตฟอร์ม ขึ้นอยู่กับปริมาณการใช้งาน (ยินดีให้คำปรึกษาและคำนวณค่าใช้จ่ายคร่าว ๆ ให้ฟรี)</li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="closeDetailsModal()" class="w-full mt-8 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 rounded-lg font-medium transition">
+                ปิด
+            </button>
+        </div>
+    </div>
+    
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">ติดต่อเรา</h3>
+                <p class="text-gray-600">เลือกช่องทางที่สะดวกสำหรับคุณ</p>
+            </div>
+            <div class="space-y-4">
+                <a href="mailto:pakphoomappdev@gmail.com" class="flex items-center justify-center space-x-3 bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition">
+                    <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                    <span class="font-medium text-gray-800">ส่งอีเมล</span>
+                </a>
+                <a href="tel:0956728359" class="flex items-center justify-center space-x-3 bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition">
+                    <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+                    <span class="font-medium text-gray-800">โทรหา</span>
+                </a>
+                <a href="https://line.me/ti/p/w7SunCAH_8" class="flex items-center justify-center space-x-3 bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition">
+                    <svg class="w-6 h-6 text-indigo-600" fill="currentColor" viewBox="0 0 20 20"><path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"/></svg>
+                    <span class="font-medium text-gray-800">LINE Chat</span>
+                </a>
+            </div>
+            <button onclick="closeContactModal()" class="w-full mt-6 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 rounded-lg font-medium transition">
+                ปิด
+            </button>
+        </div>
+    </div>
+
+<!-- Portfolio Details Modal -->
+    <div id="portfolioModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+            <!-- Close Button -->
+            <button onclick="closePortfolioModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <h3 id="modalTitle" class="text-3xl font-bold text-gray-900 mb-6 text-center"></h3>
+            
+            <!-- Image Gallery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6" id="modalImages">
+                <!-- Images will be injected here by JavaScript -->
+            </div>
+            
+            <!-- Description -->
+            <div>
+                <h4 class="text-xl font-bold text-gray-800 mb-2">ฟังก์ชันและ Requirements</h4>
+                <p id="modalDescription" class="text-gray-600 whitespace-pre-line"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">© 2024 Pakphoom App Dev. สร้างแอปด้วยใจ ไม่ต้องเขียนโค้ด</p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
